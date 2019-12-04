@@ -4,6 +4,8 @@ import kotlin.math.floor
 
 object Day01:AdventOfCodeDay {
 
+    override val DAY = 1
+
     val puzzleInput = listOf(
         148623,
         147663,
@@ -109,12 +111,12 @@ object Day01:AdventOfCodeDay {
 
     override fun runPuzzle1() {
         val result = puzzle1(puzzleInput)
-        println("Day 1, puzzle 1 result: $result")
+        outputPuzzle1(result)
     }
 
     override fun runPuzzle2() {
         val result = puzzle2(puzzleInput)
-        println("Day 1, puzzle 2 result: $result")
+        outputPuzzle2(result)
     }
 
     fun calculateFuel(mass: Long): Long {
